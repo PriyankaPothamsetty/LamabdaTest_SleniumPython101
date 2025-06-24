@@ -1,0 +1,19 @@
+Executed Testcases on LambdaTest Selenium 4 Grid
+=====================================================================
+1) Test ID's for Parallel Command: pytest -n 2 ./Tests
+=========================================================
+test_SampleFormDemo[edge] : DA-MAC-1965126-1750748043359648909WHS
+test_SampleFormDemo[chrome] : DA-WIN-1965126-1750748032487742768III
+test_SampleFormDemo[firefox] : DA-WIN-1965126-1750748026650523335IEX
+test_SampleFormDemo[IE] : DA-WIN-1965126-1750748055998166800BMW
+test_FormSubmit[IE] : DA-WIN-1965126-1750748015121943626NAX
+test_FormSubmit[edge] : DA-MAC-1965126-1750748005367409001MQQ
+test_FormSubmit[chrome] : DA-WIN-1965126-1750747986464839594TDP
+test_FormSubmit[firefox] : DA-WIN-1965126-1750747984225746437JSE
+test_DragandDrop[IE] : DA-WIN-1965126-1750747972318305146UTR
+test_DragandDrop[firefox] : DA-WIN-1965126-1750747971054274124NHH
+test_DragandDrop[chrome] : DA-WIN-1965126-1750747946528442902FEP
+test_DragandDrop[edge] : DA-MAC-1965126-1750747946289346470LTU
+
+
+
