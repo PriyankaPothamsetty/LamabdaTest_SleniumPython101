@@ -14,7 +14,7 @@ tasks:
       sleep 3
       ./lt_tunnel.sh &  # Start tunnel in background
       sleep 20          # Wait for tunnel to fully initialize
-      python -m pytest -n 2 ./Tests
+      python -m pytest -n 2 ./tests
 
 vscode:
   extensions:
