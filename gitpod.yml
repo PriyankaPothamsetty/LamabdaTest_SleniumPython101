@@ -1,0 +1,21 @@
+
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+
+image: python:3.12
+
+tasks:
+  - name: Setup, Install & Run Tests
+    init: |
+      pip install -r requirements.txt
+    command: |
+      export PYTHONWARNINGS="ignore:Unverified HTTPS request"
+      sleep 5
+      chmod +x lt_tunnel.sh
+      sleep 3
+      ./lt_tunnel.sh &  # Start tunnel in background
+      sleep 20          # Wait for tunnel to fully initialize
+      python -m pytest -n 2 ./Tests
+
+vscode:
+  extensions:
+    - ms-python.python

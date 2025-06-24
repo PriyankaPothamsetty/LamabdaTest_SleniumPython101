@@ -2,6 +2,7 @@ from tests.base_test import  BaseTest
 from utilities.Test_Data import Test_Data
 from utilities.locators import  InputFormSubmitlocators
 from pages.Form_Submit import   InputFormSubmit
+import conftest
 
 
 class Test_FormSubmit(BaseTest):
@@ -28,3 +29,4 @@ class Test_FormSubmit(BaseTest):
         inputform_page.submit_the_form(InputFormSubmitlocators.Submit_button)
         confirmation_message = inputform_page.verify_confirmation_message(InputFormSubmitlocators.confirmation_message)
         assert confirmation_message.__contains__("Thanks for contacting us, we will get back to you shortly.")
+        conftest.change_test_status(self.driver, confirmation_message.__contains__("Thanks for contacting us, we will get back to you shortly."))

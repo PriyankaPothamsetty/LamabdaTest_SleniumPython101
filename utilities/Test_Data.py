@@ -1,7 +1,8 @@
 
 
 class Test_Data:
-    url = "https://www.lambdatest.com/selenium-playground/"
+
+    url_login = "https://www.lambdatest.com/selenium-playground/"
     welcome_lambda = "Welcome to LambdaTest"
     Page_Name = "Simple Form Demo"
     Drag_Page_Name = "Drag & Drop Sliders"
