@@ -1,12 +1,9 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from time import sleep
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-class  BasePage:
-    """
-    The purpose of base page is to contain methods common to all page objects
-    """
-    def __init__(self,driver):
+class BasePage:
+    def __init__(self, driver):
         self.driver = driver
 
     def find(self, *locator):
@@ -20,13 +17,17 @@ class  BasePage:
         self.find(*locator).send_keys(value)
 
     def get_text(self, locator):
-        return  self.find(*locator).text
+        return self.find(*locator).text
 
     def get_title(self):
         return self.driver.title
 
-    # below method allows us to click page , check if page is visible & more actions
+    def wait_until_visible(self, locator, timeout=10):
+        return WebDriverWait(self.driver, timeout).until(
+            EC.visibility_of_element_located(locator)
+        )
+
     def page(self, page_name):
-        page =  By.XPATH, "//div[@class='container__selenium']//a[text()='"+ page_name +"']"
+        page = (By.XPATH, f"//div[@class='container__selenium']//a[text()='{page_name}']")
+        self.wait_until_visible(page)
         self.click(page)
-        sleep(10)
