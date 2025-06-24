@@ -45,11 +45,11 @@ Set LambdaTest **Username** and **Access Key** in ``` testdata.py.```
 ```bash
 cd LambdaTest_SeleniumPyhton101
 
-python -m pytest ./Tests
+python -m pytest ./tests
 
 or
 
-python -m pytest -n 2 ./Tests
+python -m pytest -n 2 ./tests
 ```
 
 Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on LambdaTest automation dashboard. 
