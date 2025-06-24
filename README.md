@@ -20,8 +20,8 @@ Before you can start performing **Python** automation testing with **Selenium**,
 **Step 1:** Clone the LambdaTest’s LambdaTest_SeleniumPyhton101 repository and navigate to the code directory as shown below:
 
 ```bash
-git clone https://github.com/Ganeshpsn/LambdaTest_SeleniumPyhton101
-cd LambdaTest_SeleniumPyhton101
+git clone https://github.com/PriyankaPothamsetty/LambdaTest_SeleniumPython101.git
+cd LambdaTest_SeleniumPython101
 ```
 
 **Step 2:** Download the driver from the link, or you can use **pip** to install it.
