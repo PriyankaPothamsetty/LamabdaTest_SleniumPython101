@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from time import sleep
 
 class  BasePage:
     """
@@ -28,3 +29,4 @@ class  BasePage:
     def page(self, page_name):
         page =  By.XPATH, "//div[@class='container__selenium']//a[text()='"+ page_name +"']"
         self.click(page)
+        sleep(10)
