@@ -1,6 +1,6 @@
 Executed Testcases on LambdaTest Selenium 4 Grid
 =====================================================================
-1) Test ID's for Parallel Command: pytest -n 2 ./Tests
+1) Test ID's for Parallel Command: pytest -n 2 ./tests
 =========================================================
 test_SampleFormDemo[edge] : DA-MAC-1965126-1750748043359648909WHS
 test_SampleFormDemo[chrome] : DA-WIN-1965126-1750748032487742768III
@@ -15,5 +15,18 @@ test_DragandDrop[firefox] : DA-WIN-1965126-1750747971054274124NHH
 test_DragandDrop[chrome] : DA-WIN-1965126-1750747946528442902FEP
 test_DragandDrop[edge] : DA-MAC-1965126-1750747946289346470LTU
 
-
-
+============================================================
+2) Test ID's for Normal Command: pytest ./tests
+=========================================================
+test_SampleFormDemo[edge] : DA-MAC-1965126-1750751311510370941RMB
+test_SampleFormDemo[chrome] : DA-WIN-1965126-1750751242296908274NHX
+test_SampleFormDemo[firefox] : DA-WIN-1965126-1750751280054636825LRH
+test_SampleFormDemo[IE] : DA-WIN-1965126-1750751343706840365JJQ
+test_FormSubmit[IE] : DA-WIN-1965126-1750751226703007860CZC
+test_FormSubmit[edge] : DA-MAC-1965126-1750751162583599949JXH
+test_FormSubmit[chrome] : DA-WIN-1965126-1750751077717636024QOQ
+test_FormSubmit[firefox] : DA-WIN-1965126-1750751104564472887TFQ
+test_DragandDrop[IE] : DA-WIN-1965126-1750751060293634762OAM
+test_DragandDrop[firefox] :DA-WIN-1965126-1750751009609782917OBC
+test_DragandDrop[chrome] : DA-WIN-1965126-1750750960919393521BFU
+test_DragandDrop[edge] : DA-MAC-1965126-1750751033839571038WRL
