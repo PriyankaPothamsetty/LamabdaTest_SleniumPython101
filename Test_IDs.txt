@@ -1,4 +1,4 @@
-Executed Testcases on LambdaTest Selenium 4 Grid
+Executed Testcases on LambdaTest Selenium 3 Grid
 =====================================================================
 1) Test ID's for Parallel Command: pytest -n 2 ./tests
 =========================================================
