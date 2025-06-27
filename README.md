@@ -1,4 +1,4 @@
-# LambdaTest_SeleniumPyhton101
+# LambdaTest_Selenium 101
 This Assignment demonstrates 3 test scenarios using Selenium and Python's pytest framework. The test scenarios involve automating interactions with the LambdaTest Selenium Playground.
 
 ## Table Of Contents
