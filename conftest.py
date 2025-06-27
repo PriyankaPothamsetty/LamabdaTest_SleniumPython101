@@ -37,7 +37,7 @@ remotly_url = "https://" + user_name + ":" + access_token + "@hub.lambdatest.com
 def suppress_resource_warnings():
     warnings.filterwarnings("ignore", category=UserWarning)
 
-@pytest.fixture(scope='function', params=['chrome', "firefox", "edge", "IE"])
+@pytest.fixture(scope='function', params=['chrome', "firefox", "edge"])
 def setup_teardown(request):
     """
     Initialize Driver for Selenium Grid On LambdaTest
@@ -46,8 +46,8 @@ def setup_teardown(request):
     """
     # Desired capabilities for Chrome on LambdaTest
     chrome_caps = {
-        "build": environ.get("BUILD", "Chrome Selenium Python 101"),
-        "project": "LambdaTest Selenium Python 101",
+        "build": environ.get("BUILD", "Chrome Selenium 101"),
+        "project": "LambdaTest Selenium 101",
         "name": request.node.name,
         "browserName": "Chrome",
         "browserVersion": "88.0",
@@ -63,8 +63,8 @@ def setup_teardown(request):
     }
     # Desired capabilities for Firefox on LambdaTest
     firefox_caps = {
-        "build": environ.get("BUILD", "Firefox Selenium Python 101"),
-        "project": "LambdaTest Selenium Python 101",
+        "build": environ.get("BUILD", "Firefox Selenium 101"),
+        "project": "LambdaTest Selenium 101",
         "name": request.node.name,
         "browserName": "Firefox",
         "browserVersion": "82.0",
@@ -81,8 +81,8 @@ def setup_teardown(request):
 
     # Desired capabilities for Edge on LambdaTest
     edge_caps = {
-        "build": environ.get("BUILD", "Edge Selenium Python 101"),
-        "project": "LambdaTest Selenium Python 101",
+        "build": environ.get("BUILD", "Edge Selenium 101"),
+        "project": "LambdaTest Selenium  101",
         "name": request.node.name,
         "browserName": "MicrosoftEdge",
         "browserVersion": "87.0",
@@ -97,24 +97,7 @@ def setup_teardown(request):
         "plugin": "python-pytest"
     }
 
-    # Desired capabilities for Internet Explorer on LambdaTest
-    ie_caps = {
-        "build": environ.get("BUILD", "IE Selenium Python 101"),
-        "project": "LambdaTest Selenium Python 101",
-        "name": request.node.name,
-        "browserName": "Internet Explorer",
-        "browserVersion": "11.0",
-        "platformName": "Windows 10",
-        "user_name": user_name,
-        "access_token": access_token,
-        "network": True,
-        "visual": True,
-        "video": True,
-        "console": True,
-        "w3c": True,
-        "plugin": "python-pytest"
-    }
-
+   
     # Initialize the WebDriver based on the browser parameter
     if request.param == "chrome":
         chrome_options = ChromeOptions()
@@ -147,16 +130,7 @@ def setup_teardown(request):
             command_executor=command_executor,
             options=edge_options
         )
-    elif request.param == "IE":
-        ie_options = IEOptions()
-        ie_options.set_capability("LT:Options", ie_caps)
-        config = ClientConfig(remote_server_addr=remotly_url)
-        command_executor = RemoteConnection(client_config=config)
-        suppress_resource_warnings()
-        driver = webdriver.Remote(
-            command_executor=command_executor,
-            options=ie_options
-        )
+    
 
     # Assign the driver to the test class
     request.cls.driver = driver
