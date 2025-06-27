@@ -15,12 +15,12 @@ test_DragandDrop[edge] : DA-MAC-1965126-1751031057862234826NDS
 ============================================================
 2) Test ID's for Normal Command: pytest ./tests
 =========================================================
-test_SampleFormDemo[edge] : DA-MAC-1965126-1750751311510370941RMB
-test_SampleFormDemo[chrome] : DA-WIN-1965126-1750751242296908274NHX
-test_SampleFormDemo[firefox] : DA-WIN-1965126-1750751280054636825LRH
-test_FormSubmit[edge] : DA-MAC-1965126-1750751162583599949JXH
-test_FormSubmit[chrome] : DA-WIN-1965126-1750751077717636024QOQ
-test_FormSubmit[firefox] : DA-WIN-1965126-1750751104564472887TFQ
-test_DragandDrop[firefox] :DA-WIN-1965126-1750751009609782917OBC
-test_DragandDrop[chrome] : DA-WIN-1965126-1750750960919393521BFU
-test_DragandDrop[edge] : DA-MAC-1965126-1750751033839571038WRL
+test_SampleFormDemo[edge] : DA-MAC-1965126-1751035674356783030QSR
+test_SampleFormDemo[chrome] : DA-WIN-1965126-1751035634510931613RRI
+test_SampleFormDemo[firefox] : DA-WIN-1965126-1751035657563326119FUV
+test_FormSubmit[edge] : DA-MAC-1965126-1751035611338472051ESQ
+test_FormSubmit[chrome] : DA-WIN-1965126-1751035565354880762CTP
+test_FormSubmit[firefox] : DA-WIN-1965126-1751035594593947231VWJ
+test_DragandDrop[firefox] :DA-WIN-1965126-1751035533736043337YCP
+test_DragandDrop[chrome] : DA-WIN-1965126-1751035510208256397RBI
+test_DragandDrop[edge] : DA-MAC-1965126-1751035548459963350KCA
