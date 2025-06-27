@@ -54,5 +54,4 @@ python -m pytest -n 2 ./tests
 
 Your test results would be displayed on the test console (or command-line interface if you are using terminal/cmd) and on LambdaTest automation dashboard. 
 
-**Important Note:**
-Microsoft has officially retired Internet Explorer 11 as of June 15, 2022, and recommends using Microsoft Edge. However, if you still need to use IE for legacy applications. You may observe discrepancies while running tests on Internet Explorer.
+
